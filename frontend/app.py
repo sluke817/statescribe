@@ -27,8 +27,12 @@ def logout():
 
 @app.route("/dashboard")
 def dashboard():
-    return auth_navigate_to_page(session, "pages/dashboard.html")
+    return auth_navigate_to_page(session, "pages/portal/dashboard.html")
 
-@app.route("/account")
-def account():
-    return auth_navigate_to_page(session, "pages/account.html")
+@app.route("/profile")
+def profile():
+    return auth_navigate_to_page(session, "pages/portal/profile.html")
+
+@app.route("/basic_table")
+def basic_table():
+    return auth_navigate_to_page(session, "pages/portal/basic-table.html")
