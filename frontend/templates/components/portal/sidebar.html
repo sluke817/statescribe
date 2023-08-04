@@ -32,11 +32,18 @@
                         <span class="hide-menu">Basic Table</span>
                     </a>
                 </li>
-                <!-- <li class="text-center p-20 upgrade-btn">
-                    <a href="https://www.wrappixel.com/templates/ampleadmin/"
-                        class="btn d-grid btn-danger text-white" target="_blank">
-                        Upgrade to Pro</a>
-                </li> -->
+                <li class="sidebar-item">
+                    <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{url_for('icon_preview')}}"
+                        aria-expanded="false">
+                        <i class="fas fa-arrow-alt-circle-down" aria-hidden="true"></i>
+                        <span class="hide-menu">Icon Preview</span>
+                    </a>
+                </li>
+                <li class="text-center p-20 upgrade-btn">
+                    <a href="{{url_for('logout')}}" aria-expanded="false"
+                        class="btn d-grid btn-danger text-white">
+                        Logout</a>
+                </li>
             </ul>
 
         </nav>
