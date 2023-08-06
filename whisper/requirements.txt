@@ -1,1 +1,5 @@
 boto3
+ffmpeg
+openai-whisper
+mysql-connector
+urllib3
